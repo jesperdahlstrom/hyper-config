@@ -114,9 +114,6 @@ module.exports = {
     // for environment variables
     env: {},
 
-    // set to `false` for no bell
-  //  bell: 'SOUND',
-
     // if `true` (without backticks and without quotes), selected text will automatically be copied to the clipboard
     copyOnSelect: false,
 
@@ -139,35 +136,23 @@ module.exports = {
     // rendering (slower, but supports transparent backgrounds)
     webGLRenderer: true,
 
-    hyperStatusLine: {
-      dirtyColor: 'salmon',
-      aheadColor: 'ivory',
-      footerTransparent: true,
-    },
-
     hyperTabs: {
       closeAlign: 'right',
-      trafficButtons: true,
-      activityColor: 'salmon',
-    }
-
+      tabIcons: false,
+    },
 
     // for advanced config flags please refer to https://hyper.is/#cfg
   },
 
-  // a list of plugins to fetch and install from npm
-  // format: [@org/]project[#version]
-  // examples:
-  //   `hyperpower`
-  //   `@company/project`
-  //   `project#1.0.1`
   plugins: [
+      "hyper-sweet", //grått tema
       "hyper-statusline", //en till info line
-      "hyper-sweet",
       "hypercwd", //för att hamna i samma folder som huvudflik
       "hyperterm-paste", // för copy paste
       "hyper-quit",
       "hyper-tabs-enhanced",
+      "hyper-blink",
+      //"hyperborder"
   ],
 
   // in development, you can create a directory under
